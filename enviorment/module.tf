@@ -1,3 +1,7 @@
+# module.tf added policy on main branch
+# This file is used to define the modules that will be used in the todoapp environment.
+
+
 # module "resource_group" {
 #   source                  = "../azurerm_resource_group"
 #   resource_group_name     = "aks-rg-todoapp"
