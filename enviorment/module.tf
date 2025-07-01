@@ -1,18 +1,18 @@
-module "resource_group" {
-  source                  = "../azurerm_resource_group"
-  resource_group_name     = "aks-rg-todoapp"
-  resource_group_location = "centralindia"
-}
+# module "resource_group" {
+#   source                  = "../azurerm_resource_group"
+#   resource_group_name     = "aks-rg-todoapp"
+#   resource_group_location = "centralindia"
+# }
 
-module "virtual_network" {
-  depends_on = [module.resource_group]
-  source     = "../azurerm_virtual_network"
+# module "virtual_network" {
+#   depends_on = [module.resource_group]
+#   source     = "../azurerm_virtual_network"
 
-  virtual_network_name     = "aks-vnet-todoapp"
-  virtual_network_location = "centralindia"
-  resource_group_name      = "aks-rg-todoapp"
-  address_space            = ["10.0.0.0/16"]
-}
+#   virtual_network_name     = "aks-vnet-todoapp"
+#   virtual_network_location = "centralindia"
+#   resource_group_name      = "aks-rg-todoapp"
+#   address_space            = ["10.0.0.0/16"]
+# }
 
 # Dard1 - Backend subnet and frontend subnet do baar repeat ho raha hai...
 module "frontend_subnet" {
