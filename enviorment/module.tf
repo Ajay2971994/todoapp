@@ -1,5 +1,8 @@
 # module.tf added policy on main branch
 # This file is used to define the modules that will be used in the todoapp environment.
+# It includes the resource group, virtual network, subnets, public IPs, virtual machines, SQL server, SQL database, and Azure Key Vault.
+# module "resource_group" {
+#   source                  = "../azurerm_resource_group" 
 
 
 # module "resource_group" {
